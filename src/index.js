@@ -33,7 +33,7 @@ async function executeSELECTQuery(query) {
         : data;
 
     // Select the specified fields
-    filteredData.map(row => {
+    return filteredData.map(row => {
         const selectedRow = {};
         fields.forEach(field => {
             // Assuming 'field' is just the column name without table prefix
